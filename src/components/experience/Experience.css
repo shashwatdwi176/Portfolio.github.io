@@ -56,13 +56,14 @@
 }
 
 /* mobile view */
-
+@media screen and (max-width: 600px){
 .skill_container{
     gap: 1rem;
 
 }
 
 .skill_container > div{
-    width: 100%;
+    width: 92%;
     padding: 2rem 1rem;
+}
 }

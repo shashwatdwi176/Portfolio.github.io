@@ -76,10 +76,25 @@ textarea{
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    .contact_options{
+        display: flex;
+        flex-direction: column;
+        gap-: 1.2rem;
+        width: 50%;
+        
+    
+    }
 }
 
 @media screen and (max-width:600px){
     .container.contact_container{
         width: var(--container-width-sm);
+    }
+    .contact_options{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        width: 50%;
+    
     }
 }

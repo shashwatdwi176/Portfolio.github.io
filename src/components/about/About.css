@@ -1,3 +1,7 @@
+#about{
+    height :max-content;
+}
+
 .about_container{
     display: grid;
     grid-template-columns: 35% 50%;
@@ -49,6 +53,7 @@
     .about_me p{
         margin: 1rem 0 1.5rem;
     }
+    
 }
 
 /* mobile view  */
@@ -65,9 +70,9 @@
         margin: 0 auto 3rem;
     }
     .about_content{
-        text-align: center;
+        text-align:center;
     }
     .about_content p{
-        margin: 1.5rem 0;
+        margin: 1.5rem 0.5rem;
     }
 }
