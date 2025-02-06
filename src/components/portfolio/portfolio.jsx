@@ -1,6 +1,6 @@
 import React from 'react'
 import './portfolio.css'
-import weather from '../../assests/weather.png'
+import lms from '../../assests/lms.png'
 import todo from '../../assests/Todo.png'
 import ecomerce from '../../assests/ecommerce.jpg'
 const Portfolio = () => {
@@ -14,12 +14,12 @@ const Portfolio = () => {
       <div className='container project_container'>
         <article className='project_item'>
           <div className='project_item-image'>
-            <img src={weather} alt=''></img>
+            <img src={lms} height={250} alt=''></img>
           </div>
           <h3>Weather App</h3>
           <div className='project_item-cta'>
-          <a href='https://github.com/shashwatdwi176/Weather-App-React' className='btn' target='_blank'>GitHub</a>
-          <a href='https://shashwatdwi176.github.io/Weather-App-React/' className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href='https://github.com/shashwatdwi176/Learning-Management-System-NextJS-Aws' className='btn' target='_blank'>GitHub</a>
+          <a href='https://github.com/shashwatdwi176/Learning-Management-System-NextJS-Aws' className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='project_item'>
