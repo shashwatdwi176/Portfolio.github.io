@@ -3,6 +3,7 @@ import { BsLinkedin } from "react-icons/bs";
 import {BsGithub} from 'react-icons/bs';
 import {BsTwitter} from 'react-icons/bs';
 import {BsDiscord} from 'react-icons/bs';
+import { SiLeetcode } from "react-icons/si";
 
 
 const HeaderSocials = () => {
@@ -14,6 +15,12 @@ const HeaderSocials = () => {
         target="_blank"
       >
         <BsLinkedin />
+      </a>
+      <a
+        href="https://leetcode.com/u/shashwatdwi176/"
+        target="_blank"
+      >
+        <SiLeetcode size={20}  />
       </a>
       <a href="https://github.com/shashwatdwi176" target="_blank"><BsGithub/></a>
       <a href="https://twitter.com/Shashwat176" target="_blank"><BsTwitter /></a>
