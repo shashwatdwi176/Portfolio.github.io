@@ -1,78 +1,117 @@
-#about{
-    height :max-content;
+#about {
+    /* Use padding to create space above/below the section, not height */
+    padding-top: 5rem; 
+     /* Make sure this is reduced! */
 }
 
-.about_container{
+.about_container {
+    /* Reduced gap for a tighter layout */
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 10%;
+    grid-template-columns: 35% 55%;
+    gap: 10%; /* Keeping 10% horizontal gap */
+    align-items: center; /* Vertically align image and content */
+    width: 80%; /* Constrain width slightly */
+    margin: 0 auto; /* Center the container */
 }
 
-.about_me{
-    width: 75%;
+.about_me {
+    /* Reduced width to make the image smaller and less intrusive */
+    width: 80%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(45deg,transparent,var(--color-primary),transparent);
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
     align-items: center;
-    margin-left: 18%;
-    margin-top: 5%;
+    /* Adjust margin to center or position the image */
+    margin: 0 auto; 
 }
 
-.about_me-image{
+.about_me-image {
     width: 100%;
     height: 100%;
     border-radius: 2rem;
-    overflow:hidden;
+    overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
 }
 
-.about_me-image:hover{
+.about_me-image:hover {
     transform: rotate(0);
 }
 
-.about_content p{
-    margin-right: 7%;
-    margin-bottom: 3%;
+.about_content {
+    /* Ensure content starts close to the image */
+    padding: 0;
 }
 
-/* tablet view  */
+/* ------------------------------------------------------------------ */
+/* FIX: Reduced margin between paragraphs and improved line-height */
+/* ------------------------------------------------------------------ */
 
-@media screen and (max-width: 1024px){
-    .about_container{
-        grid-template-columns: 1fr;
-        gap: 0;;
-    }
-
-    .about_me{
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
-
-    .about_me p{
-        margin: 1rem 0 1.5rem;
-    }
+.about_content p {
+    /* Increased line-height for better line separation within the paragraph */
+    line-height: 1.8; 
     
+    /* Reduced margin below the paragraph to close the vertical gap */
+    margin-bottom: 1.25rem; /* Reduced from 2.5rem */
+    margin-right: 0; 
 }
 
-/* mobile view  */
+/* Style to ensure the last paragraph has slightly more space before the button */
+.about_content p:last-of-type {
+    margin-bottom: 2.5rem; /* Keeps a decent space before the "Let's Connect" button */
+}
 
-@media screen  and (max-width:600px){
+/* Style to soften bold text color */
+.about_content p strong {
+    color: var(--color-primary); 
+}
+
+/* ================== TABLET VIEW (max-width: 1024px) ================== */
+
+@media screen and (max-width: 1024px) {
+    .about_container {
+        grid-template-columns: 1fr; /* Stack the image and text */
+        gap: 0;
+        width: 90%;
+    }
+
+    .about_me {
+        width: 45%; /* Smaller image on tablet */
+        margin: 2rem auto 3rem; /* Center and add vertical space */
+    }
+
+    .about_content {
+        text-align: left; /* Keep text aligned left */
+        width: 90%;
+        margin: 0 auto; /* Center the content block */
+    }
+
+    .about_content p {
+        margin-bottom: 1.5rem; /* Adjusted for tablet view */
+        padding: 0 1rem; /* Add slight padding on sides */
+    }
     
-    .about_container{
-        grid-template-columns: 1fr;
-        gap: 0;;
+    .about_content p:last-of-type {
+        margin-bottom: 2rem; /* Ensure space before button on tablet */
     }
+}
 
-    .about_me{
-        width: 65%;
-        margin: 0 auto 3rem;
+/* ================== MOBILE VIEW (max-width: 600px) ================== */
+
+@media screen and (max-width: 600px) {
+    .about_me {
+        width: 60%; /* Slightly larger image on mobile */
+        margin: 0 auto 2rem;
     }
-    .about_content{
-        text-align:center;
+    .about_content {
+        text-align: center; /* Center text on mobile */
+        width: 100%;
     }
-    .about_content p{
-        margin: 1.5rem 0.5rem;
+    .about_content p {
+        margin: 1rem 0.5rem;
+    }
+    .about_content p:last-of-type {
+        margin-bottom: 1.5rem; /* Ensure space before button on mobile */
     }
 }

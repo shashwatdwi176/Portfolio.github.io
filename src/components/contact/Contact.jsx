@@ -1,8 +1,9 @@
 import React from 'react'
 import './Contact.css'
-import {MdOutlineEmail} from 'react-icons/md'
-import {BsTwitter} from 'react-icons/bs';
-import { BsLinkedin } from "react-icons/bs";
+import { MdOutlineEmail } from 'react-icons/md'
+import { BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs'; // Imported BsGithub
+import { SiLeetcode } from 'react-icons/si'; // Imported SiLeetcode (you might need to install react-icons/si)
+
 const Contact = () => {
   return (
     <section id='contact'>
@@ -11,30 +12,49 @@ const Contact = () => {
 
       <div className='container contact_container'>
         <div className='contact_options'>
+          
+          {/* Email */}
           <article className='contact_option'>
-          <MdOutlineEmail className='contact_option_icon' />
+            <MdOutlineEmail className='contact_option_icon' />
             <h4>Email</h4>
             <h5>
-            dwivedishashwat176@gmail.com
+            dwivedishashwat176@gmail.com 
             </h5>
             <a href='mailto:dwivedishashwat176@gmail.com' target='_blank'>Send a message</a>
           </article>
+          
+          {/* LinkedIn */}
           <article className='contact_option'>
-          <BsTwitter  className='contact_option_icon'/>
-            <h4>Twitter</h4>
+            <BsLinkedin className='contact_option_icon' />
+            <h4>LinkedIn</h4>
             <h5>
-            @Shashwat176
+            Shashwat Dwivedi 
             </h5>
-            <a href='https://twitter.com/Shashwat176' target='_blank' className='linkedin_twitter'>Send a message</a>
+            <a href='https://www.linkedin.com/in/shashwat-dwivedi-1264a6259/' target='_blank'>View Profile</a>
           </article>
+          
+          {/* GitHub - NEW */}
           <article className='contact_option'>
-          <BsLinkedin className='contact_option_icon' />
-            <h4>Linkedin</h4>
+            <BsGithub className='contact_option_icon' />
+            <h4>GitHub</h4>
             <h5>
-            Shashwat Dwivedi
+            shashwatdwi176
             </h5>
-            <a href='https://www.linkedin.com/in/shashwat-dwivedi-1264a6259/' target='_blank'>Send a message</a>
+            <a href='https://github.com/shashwatdwi176' target='_blank'>View Repositories</a> {/* NOTE: Replace with your actual GitHub link */}
           </article>
+
+          {/* LeetCode - NEW */}
+          <article className='contact_option'>
+            <SiLeetcode className='contact_option_icon' />
+            <h4>LeetCode</h4>
+            <h5>
+            500+ Problems Solved 
+            </h5>
+            <a href='https://leetcode.com/u/shashwatdwi176/' target='_blank'>View Profile</a> {/* NOTE: Replace with your actual LeetCode link */}
+          </article>
+          
+          {/* Twitter (Optional, placed at the end) */}
+          
         </div>
         {/* <form action=''>
           <input type ='text' name =  'name' placeholder='Your Full Name' required />
