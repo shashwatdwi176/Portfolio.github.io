@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Portfolio.github.io/static/css/main.830b3672.css",
-    "main.js": "/Portfolio.github.io/static/js/main.25760ac9.js",
+    "main.js": "/Portfolio.github.io/static/js/main.32f3be23.js",
     "static/media/Pinaak_Wheels.png": "/Portfolio.github.io/static/media/Pinaak_Wheels.d815b372e0f4f2b15074.png",
     "static/media/PINAAK_Edutech.png": "/Portfolio.github.io/static/media/PINAAK_Edutech.31c4f8bca4b0d5351b75.png",
-    "static/media/Shashwat_Dwivedi_Resume.pdf": "/Portfolio.github.io/static/media/Shashwat_Dwivedi_Resume.c1198054ad4c9073f6c9.pdf",
+    "static/media/Shashwat_Dwivedi_Resume.pdf": "/Portfolio.github.io/static/media/Shashwat_Dwivedi_Resume.368b8e9e423c9d1ebaea.pdf",
     "static/media/shashwatprofilephotoside.jpeg": "/Portfolio.github.io/static/media/shashwatprofilephotoside.8a5e4547a1f432000f79.jpeg",
     "static/media/shashwat-pf-without-bg.png": "/Portfolio.github.io/static/media/shashwat-pf-without-bg.10acc5dbee48579cc690.png",
     "static/media/PINAAK_PrepMaster.png": "/Portfolio.github.io/static/media/PINAAK_PrepMaster.91f834f94ff65cc44ee7.png",
     "index.html": "/Portfolio.github.io/index.html",
     "main.830b3672.css.map": "/Portfolio.github.io/static/css/main.830b3672.css.map",
-    "main.25760ac9.js.map": "/Portfolio.github.io/static/js/main.25760ac9.js.map"
+    "main.32f3be23.js.map": "/Portfolio.github.io/static/js/main.32f3be23.js.map"
   },
   "entrypoints": [
     "static/css/main.830b3672.css",
-    "static/js/main.25760ac9.js"
+    "static/js/main.32f3be23.js"
   ]
 }
